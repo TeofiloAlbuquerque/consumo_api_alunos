@@ -1,0 +1,139 @@
+
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123"
+        },
+        {
+            "id": 1,
+            "name": "Guilherme",
+            "email": "guilherme@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "adm_users": [
+        {
+            "id": 1,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123",
+            "profile": "ADMIN"
+        },
+        {
+            "id": 2,
+            "name": "Guilherme",
+            "email": "Guilherme@gmail.com",
+            "password": "1234",
+            "profile": "SUPORTE"
+        }
+    ],
+    "products": [
+        {
+            "id": 0,
+            "title": "Academia do flutter"
+        },
+        {
+            "id": 1,
+            "title": "Jornada Dart"
+        },
+        {
+            "id": 2,
+            "title": "Jornada GetX"
+        }
+    ],
+    "alunos": [
+        {
+            "id": 0,
+            "nome": "Pedro Souza",
+            "idade": 39,
+            "nomeCursos": [
+                "Academia do Flutter",
+                "Jornada GetX",
+                "Jornada Clean Code"
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada Getx",
+                    "isAluno": true
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": true
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 200,
+                "CEP": "0915225222",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Santo André"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "telefone": "98575-5555"
+                }
+            }
+
+        },
+        {
+            "id": 1,
+            "nome": "Pedrita Rentifild", 
+            "nomeCursos": [
+                "Academia do Flutter"
+                
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada Getx",
+                    "isAluno": false
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": false
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua Z",
+                "numero": 250,
+                "CEP": "0816225333",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Santo Leopoldo"
+                },
+                "telefone": {
+                    "ddd": 15,
+                    "telefone": "9864-1515"
+                }
+            }
+
+        }
+    ]
+}

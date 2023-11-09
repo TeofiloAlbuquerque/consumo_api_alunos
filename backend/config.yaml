@@ -1,0 +1,18 @@
+# Tudo que envolva as configurações do servidor
+name: Json Rest Server
+port: 8080
+# Caso mantenha o host como 0.0.0.0 ele irá responder tanto na url Localhost quanto a de seu IP
+host: 0.0.0.0
+database: database.json
+
+# auth:
+#   jwtSecret: cwsMXDtuP447WZQ63nM4dWZ3RppyMl
+#   jwtExpire: 3600
+#   unauthorizedStatusCode: 403
+#   urlSkip:
+#     - /images/:
+#        method: get
+#     - /users:
+#        method: post
+#      - /products/{*}:
+#        method: get
