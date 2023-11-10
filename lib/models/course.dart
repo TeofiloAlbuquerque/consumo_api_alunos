@@ -16,8 +16,8 @@ class Course {
   Map<String, dynamic> toMap() {
     return {
       "id": id,
-      "name": name,
-      "isStudent": false,
+      "nome": name,
+      "isAluno": false,
     };
   }
 
@@ -26,15 +26,15 @@ class Course {
   String toJson() => jsonEncode(toMap());
 
   // DESSERIALIZAÇÃO
-  // Passo 1
-  factory Course.fromJson(String json) => Course.fromMap(jsonDecode(json));
 
   // Passo 2
   factory Course.fromMap(Map<String, dynamic> map) {
     return Course(
-      id: map['id'],
-      name: map['name'],
-      isStudent: map['isStudent'],
+      id: map['id'] ?? 0,
+      name: map['nome'] ?? "",
+      isStudent: map['isAluno'] ?? false,
     );
   }
+  // Passo 1
+  factory Course.fromJson(String json) => Course.fromMap(jsonDecode(json));
 }
